@@ -21,10 +21,10 @@ let len2 = name2.length;
 let len3 = name3.length;
 
 if (len1 === len2 && len2 === len3) {
-    console.log(`All three names, ${name1}, ${name2}, and ${name3}, are the same length.`);
+    console.log(`${names} have the same length`);
 } else if (len1 >= len2 && len1 >= len3) {
     if (len1 === len2 && len1 === len3) {
-        console.log(`${name1}, ${name2}, and ${name3} tie for the longest name.`);
+        console.log(`${names} tie for the longest name.`);
     } else if (len1 === len2) {
         console.log(`${name1} and ${name2} tie for the longest name.`);
     } else if (len1 === len3) {
