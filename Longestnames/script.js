@@ -17,14 +17,18 @@ let names = [[name1],[name2],[name3]];
  console.log(names)
 
  let longestNames = [];
- let maxCharcacters = 0; // max characters in a string
+ let maxLength = 0; // max characters in a string
  let index = 0; // position of names in the array
 
+
  while (index < names.length) {
-let currentCharacter = names[index].length; {
-    if (currentCharacter > maxCharcacters) {
-        maxCharcacters = currentCharacter;
+let currentLength = names[index].length; {
+    if (currentLength > maxLength) {
+        maxLength = currentLength;
         longestNames = names[index].length;
+    } else if (currentLength = maxLength) {
+
+
     }
 }
 
