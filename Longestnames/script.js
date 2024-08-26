@@ -16,24 +16,22 @@ console.log(length3)
 let names = [[name1],[name2],[name3]];
  console.log(names)
 
-let len1 = name1.length;
-let len2 = name2.length;
-let len3 = name3.length;
 
-if (len1 === len2 && len2 === len3) {
+
+if (length1 === length2 && length3 === length3) {
     console.log(`${names} have the same length`);
-} else if (len1 >= len2 && len1 >= len3) {
-    if (len1 === len2 && len1 === len3) {
+} else if (length1>= length1 && length1 >= length3) {
+    if (length1 === length1 && length1 === length3) {
         console.log(`${names} tie for the longest name.`);
-    } else if (len1 === len2) {
+    } else if (length1 === length2) {
         console.log(`${name1} and ${name2} tie for the longest name.`);
-    } else if (len1 === len3) {
+    } else if (length1 === length3) {
         console.log(`${name1} and ${name3} tie for the longest name.`);
     } else {
         console.log(`${name1} has the longest name.`);
     }
-} else if (len2 >= len3) {
-    if (len2 === len3) {
+} else if (length2 >= length3) {
+    if (length2 === length3) {
         console.log(`${name2} and ${name3} tie for the longest name.`);
     } else {
         console.log(`${name2} has the longest name.`);
