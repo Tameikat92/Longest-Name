@@ -37,6 +37,6 @@ if (length1 === length2 && length3 === length3) {
         console.log(`${name2} has the longest name.`);
     }
 } else {
-    console.log(`${name3} has the longest name.`);
+    console.log(`${names[2]} has the longest name.`); // using index number from array
 }
 
