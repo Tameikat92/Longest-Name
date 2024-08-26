@@ -16,31 +16,29 @@ console.log(length3)
 let names = [[name1],[name2],[name3]];
  console.log(names)
 
- let longestNames = [];
- let maxLength = 0; // max characters in a string
- let index = 0; // position of names in the array
+let len1 = name1.length;
+let len2 = name2.length;
+let len3 = name3.length;
 
-
- while (index < names.length) {
-    let currentLength = names[index].length;
-    if (currentLength > maxLength) {
-        maxLength = currentLength;
-        longestNames = [names[index]];
-    } else if (currentLength === maxLength) {
-        longestNames.push(names[index]);
+if (len1 === len2 && len2 === len3) {
+    console.log(`All three names, ${name1}, ${name2}, and ${name3}, are the same length.`);
+} else if (len1 >= len2 && len1 >= len3) {
+    if (len1 === len2 && len1 === len3) {
+        console.log(`${name1}, ${name2}, and ${name3} tie for the longest name.`);
+    } else if (len1 === len2) {
+        console.log(`${name1} and ${name2} tie for the longest name.`);
+    } else if (len1 === len3) {
+        console.log(`${name1} and ${name3} tie for the longest name.`);
+    } else {
+        console.log(`${name1} has the longest name.`);
     }
-    index++;
-}
-
-// Output the result
-if (longestNames.length === names.length) {
-    console.log(`All three names, ${names.join(', ')}, are the same length.`);
-} else if (longestNames.length === 1) {
-    console.log(`${longestNames[0]} has the longest name.`);
+} else if (len2 >= len3) {
+    if (len2 === len3) {
+        console.log(`${name2} and ${name3} tie for the longest name.`);
+    } else {
+        console.log(`${name2} has the longest name.`);
+    }
 } else {
-    console.log(`${longestNames.join(' and ')} tie for the longest name.`);
+    console.log(`${name3} has the longest name.`);
 }
-
-
-
 
