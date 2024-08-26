@@ -22,18 +22,24 @@ let names = [[name1],[name2],[name3]];
 
 
  while (index < names.length) {
-let currentLength = names[index].length; {
+    let currentLength = names[index].length;
     if (currentLength > maxLength) {
         maxLength = currentLength;
-        longestNames = names[index].length;
-    } else if (currentLength = maxLength) {
-
-
+        longestNames = [names[index]];
+    } else if (currentLength === maxLength) {
+        longestNames.push(names[index]);
     }
+    index++;
 }
 
- }
-
+// Output the result
+if (longestNames.length === names.length) {
+    console.log(`All three names, ${names.join(', ')}, are the same length.`);
+} else if (longestNames.length === 1) {
+    console.log(`${longestNames[0]} has the longest name.`);
+} else {
+    console.log(`${longestNames.join(' and ')} tie for the longest name.`);
+}
 
 
 
