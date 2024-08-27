@@ -14,16 +14,18 @@ function calculateGrade(grade){
     if(grade > 89 && grade < 101) {
         return "You've got an A great job";
     } else if(grade > 79 && grade < 90){
-        return "You've got an B great job";
+        return "You've got a B great job";
     } else if (grade > 69 && grade < 80) {
-        return "You've got an C great job";
+        return "You've got a C great job";
     } else if(grade > 59 && grade < 70) {
-        return "You've got an D ";
+        return "You've got a D ";
     } else if(grade >=0 && grade < 60) {
         return "You didn't pass. F ";
     }
     else {
-       return  "You've failed";
+       return  "Invalid grade";
     }
 }
-console.log(calculateGrade)
+
+let result = calculateGrade(65);
+console.log(result);
